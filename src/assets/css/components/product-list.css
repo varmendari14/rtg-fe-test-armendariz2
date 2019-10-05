@@ -1,0 +1,14 @@
+.product {
+    border-bottom: 1px solid lightgray;
+  }
+  .product-add-to-cart button {
+    background-color: #0053a0;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .8rem .5rem;
+    font-size: .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
