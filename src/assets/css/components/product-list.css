@@ -1,5 +1,6 @@
 .product {
     border-bottom: 1px solid lightgray;
+    display: flex;
   }
   .product-add-to-cart button {
     background-color: #0053a0;

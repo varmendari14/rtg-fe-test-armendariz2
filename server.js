@@ -55,43 +55,18 @@ app.post('/removeFromCart', function (req, res) {
     res.end("removed from cart");
 });
 
-// Update Total +
-app.post('/addOne', function (req, res) {
-    console.log(req.body.product);
-    let curProduct = req.body.product;
+// Update Total
+app.post('/updateProductTotal', function (req, res) {
+    const curProduct = req.body.product;
     // Search for if it exists already
     for (let i = 0; i < currInCart.length; i++) {
         if (curProduct.sku == currInCart[i].sku) {
-            currInCart[i].total += 1;
+            currInCart[i].total = req.body.total;
             break;
         }
     }
-    res.end("added one more to cart");
-});
-// Update Total -
-app.post('/removeOne', function (req, res) {
-    console.log(req.body.product);
-    let curProduct = req.body.product;
-    for (let i = 0; i < currInCart.length; i++) {
-        if (curProduct.sku == currInCart[i].sku) {
-            if (currInCart[i].total - 1 == 0 ) {
-                let index = -1;
-                for (let i = 0; i < currInCart.length; i++) {
-                    if (curProduct.sku == currInCart[i].sku) {
-                        index = i;
-                        break;
-                    }
-                }
-                if (index > -1) {
-                    currInCart.splice(index, 1);
-                }
-            } else {
-                currInCart[i].total -= 1;
-            }
-            break;
-        }
-    }
-    res.end("added one more to cart");
+    console.log(currInCart);
+    res.end("updated number");
 });
 
 app.get('/', function (req, res) {
