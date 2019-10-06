@@ -33,8 +33,8 @@ const Header = () => (
             fontSize: `1rem`,
             float: `right`,
             position: `absolute`,
-            top: `1.5rem`,
-            right: `1.0875rem`,
+            top: `.75em`,
+            right: `1em`,
             fontWeight: `700`
           }}
         >

@@ -4,8 +4,13 @@
     text-align: center;
     text-transform: uppercase;
     padding: .8rem .5rem;
-    font-size: .8rem;
     border-radius: .5rem;
-    cursor: pointer;
     font-weight: 700;
   }
+
+.product-remove-from-cart button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

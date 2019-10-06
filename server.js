@@ -28,6 +28,10 @@ app.post('/addToCart', function (req, res) {
     for (let i = 0; i < currInCart.length; i++) {
         if (curProduct.sku == currInCart[i].sku) {
             currInCart[i].total += 1;
+            if (currInCart[i].total > 10) {
+                // Could put a message pop up telling user they cannot add more of this item
+                currInCart[i].total = 10;
+            }
             wasFound = true;
             break;
         }

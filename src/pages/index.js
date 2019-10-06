@@ -3,10 +3,12 @@ import Header from '../components/header';
 import ProductList from '../components/product-list';
 
 const IndexPage = () => (
-  <div className='layout'>
+  <div>
     <Header/>
-    <h1>Products</h1>
-    <ProductList />
+    <div className='layout'>
+      <h1>Products</h1>
+      <ProductList />
+    </div>
   </div>
 )
 

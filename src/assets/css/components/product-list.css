@@ -1,7 +1,20 @@
 .product {
     border-bottom: 1px solid lightgray;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: row nowrap;
+    height: 100%;
   }
+
+  .product .cell {
+    width: -webkit-fill-available;
+    margin-right: 1em;
+  }
+  .product-image {
+    margin-top: 1em;
+  }
+
   .product-add-to-cart button {
     background-color: #0053a0;
     color: #ffffff;
