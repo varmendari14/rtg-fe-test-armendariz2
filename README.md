@@ -4,8 +4,8 @@
 ---
 - run `npm i`
 - run `node server.js`
-- in a Separate terminal/command line window run `npm start`
-- http://localhost:3000
+- in a Separate terminal/command line window run `npm start` (make sure node server.js is still running)
+- http://localhost:3000 (should pop up automatically if a browser is open)
 
 
 #### Expectation
